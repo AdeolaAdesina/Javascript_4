@@ -330,3 +330,28 @@ Output:
 ![Screenshot_206](https://user-images.githubusercontent.com/29931071/201901256-6197c531-0d82-4834-8602-9026f1b72496.png)
 
 
+# Nested Arrays
+
+Earlier we mentioned that arrays can store other arrays. When an array contains another array it is known as a nested array. Examine the example below:
+
+```
+const nestedArr = [[1], [2, 3]];
+```
+
+To access the nested arrays we can use bracket notation with the index value, just like we did to access any other element:
+
+```
+const nestedArr = [[1], [2, 3]];
+ 
+console.log(nestedArr[1]); // Output: [2, 3]
+```
+
+Then, if we wanted to access the elements within the nested array we can chain, or add on, more bracket notation with index values.
+
+```
+const nestedArr = [[1], [2, 3]];
+ 
+console.log(nestedArr[1]); // Output: [2, 3]
+console.log(nestedArr[1][0]); // Output: 2
+```
+
